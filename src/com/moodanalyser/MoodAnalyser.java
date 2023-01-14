@@ -3,21 +3,13 @@ package com.moodanalyser;
 public class MoodAnalyser {
 	
 	
- 
-
-String analyserMood(String mood)
+String analyserMood(String mood) throws MoodAnalyseException
  {
 	 
-		if(mood.contains("sad"))
-			 return "sad";
-		 else
-			try {
-				if(mood.contains("sad"))
-					return "sad";
-				else
-					return "happy";
-			}catch(NullPointerException e) {
-		return "happy";
-			}
+		if(mood.contains("sad")) {
+			return "sad";
+		}
+		else {
+			throw new MoodAnalyseException(mood);}
  }
 }
