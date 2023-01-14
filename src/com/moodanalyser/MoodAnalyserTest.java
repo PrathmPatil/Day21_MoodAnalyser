@@ -9,9 +9,10 @@ class MoodAnalyserTest {
 
 	@Test
 	void  testanalyserMood() {
-		String actual;
-		MoodAnalyser moodanalyser=new MoodAnalyser("happy");
-		actual=moodanalyser.analyserMood();
+		
+		MoodAnalyser moodanalyser=new MoodAnalyser();
+		String mood="happy";
+		String actual=moodanalyser.analyserMood(mood);
 		assertEquals("happy", actual);
 	}
 

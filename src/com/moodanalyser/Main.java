@@ -9,8 +9,8 @@ public class Main {
 		System.out.println("Enter Mood: ");
 		String mood=sc.nextLine();
 		String moodCase=mood.toLowerCase();
-		MoodAnalyser moodanalyser=new MoodAnalyser(moodCase);
-		System.out.println(moodanalyser.analyserMood());
+		MoodAnalyser moodanalyser=new MoodAnalyser();
+		System.out.println(moodanalyser.analyserMood(moodCase));
 		
 	}
 
