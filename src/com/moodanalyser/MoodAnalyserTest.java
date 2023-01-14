@@ -11,7 +11,7 @@ class MoodAnalyserTest {
 	void  testanalyserMood() {
 		
 		MoodAnalyser moodanalyser=new MoodAnalyser();
-		String mood="happy";
+		String mood=" ";
 		String actual=moodanalyser.analyserMood(mood);
 		assertEquals("happy", actual);
 	}
